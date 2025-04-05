@@ -7,7 +7,7 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY)
 // placing user order from frontend
 const placeorder = async (req, res) => {
 
-    const frontend_url = 'https://yum-express.vercel.app'
+    const frontend_url = 'https://localhost:5174'
 
     try {
         const newOrder = new orderModel({
